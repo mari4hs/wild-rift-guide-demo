@@ -1,0 +1,154 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0b0b0b;
+  color: #fff;
+  line-height: 1.4;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #4b00ff, #ff0057);
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+/* Botões de idioma */
+.lang-buttons {
+  margin-bottom: 10px;
+}
+
+.lang-buttons button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #222;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.lang-buttons button:hover {
+  background-color: #555;
+}
+
+/* Inputs */
+input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Select estilizado */
+select {
+  position: relative;
+  margin: 5px;
+  padding: 6px 30px 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Setinha personalizada */
+select::after {
+  content: "▼";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+/* Remove ícone padrão no IE */
+select::-ms-expand {
+  display: none;
+}
+
+/* Container dos cards */
+#champions-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card do campeão */
+.champion-card {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.champion-card:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do campeão */
+.champion-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Nome e detalhes */
+.champion-card h2 {
+  margin: 10px 0 5px 0;
+}
+
+.champion-card p {
+  margin: 5px 0;
+  font-size: 0.9em;
+}
+
+/* Títulos internos do card */
+.champion-card h3 {
+  margin: 10px 0 5px 0;
+  font-size: 1em;
+  color: #ffcc00;
+}
+
+/* Listas dentro do card */
+.champion-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  font-size: 0.85em;
+}
+
+.champion-card ul li {
+  margin-bottom: 3px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8em;
+  background-color: #111;
+}
