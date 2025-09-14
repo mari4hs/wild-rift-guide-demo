@@ -11,10 +11,10 @@ This project is a **responsive, front-end web guide** for 5 Wild Rift champions,
 - **Bilingual**: English and Portuguese  
 - **Responsive design** for mobile and desktop  
 
-## Demo
+## 🚀 Live Demo
 
-Check the live demo [here](#) once deployed.  
-
+🔗 [Click here to view the Wild Rift Champion Guide](https://mari4hs.github.io/wild-rift-guide-demo/)
+ 
 ## License
 
 All champion images are property of **Riot Games**. This project is for **educational and portfolio purposes only**.
